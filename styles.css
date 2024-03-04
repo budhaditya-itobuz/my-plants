@@ -1,1 +1,224 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+.focus-ring {
+  --bs-focus-ring-color: rgba(#fff, 0);
+}
+
+a {
+  font-family: "poppins", sans-serif !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  font-family: "poppins";
+}
+
+.logo {
+  color: #7D807E;
+}
+.logo span {
+  color: #3E8847;
+}
+
+.search {
+  font-family: "poppins", sans-serif;
+  border: 1px solid #7D807E;
+  border-radius: 20px;
+  width: 200px;
+  overflow: hidden;
+}
+.search input {
+  font-size: 12px;
+  margin: auto;
+}
+.search input::-moz-placeholder {
+  color: #C0C0C0;
+}
+.search input::placeholder {
+  color: #C0C0C0;
+}
+.search img {
+  width: 16px;
+  margin: 0 10px;
+}
+
+.hero {
+  position: relative;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+}
+.hero .hero-info {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  margin: 30px;
+  max-width: 400px;
+  padding: 10px;
+}
+.hero .hero-info .leaf-img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: -60px;
+  margin-left: -10px;
+}
+.hero .hero-info .hero-title {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-info .hero-title::before {
+  display: inline-block;
+  content: "";
+  width: 60px;
+  background-color: #D4D4D4;
+  height: 2px;
+  margin: 10px;
+}
+.hero .hero-info h1 {
+  color: #3E8847;
+  font-size: 60px;
+}
+.hero .hero-info .hero-btn-group button {
+  font-family: "poppins", sans-serif;
+  border-radius: 50px;
+  font-size: 20px;
+}
+.hero .hero-info .hero-social-img {
+  height: 25px;
+}
+.hero .img-active {
+  width: 50%;
+}
+
+.hero-carousel {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.hero-carousel::-webkit-scrollbar {
+  display: none;
+}
+.hero-carousel .hero-img {
+  max-height: 600px;
+  border-radius: 50px;
+  transition: ease-in-out 400ms;
+}
+.hero-carousel .hero-img:hover {
+  transform: scale(0.7);
+  z-index: 2;
+  margin-right: -200px;
+}
+
+.plant-collection {
+  padding: 50px 10px;
+}
+.plant-collection h3 {
+  text-align: center;
+  font-size: 35px;
+}
+.plant-collection .collection-body {
+  max-width: 1200px;
+  display: flex;
+  overflow-x: scroll;
+}
+.plant-collection .collection-body::-webkit-scrollbar {
+  display: none;
+}
+.plant-collection .collection-body .collection-card {
+  min-width: 350px;
+  max-width: 400px;
+  margin: 20px;
+}
+.plant-collection .collection-body .collection-card h4 {
+  margin: 20px 0;
+}
+.plant-collection .collection-body .collection-card img {
+  height: auto;
+}
+.plant-collection .collection-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.plant-collection .collection-buttons a {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.plant-collection .collection-buttons a:nth-child(2) {
+  border: 1px solid #F5C771;
+  color: #F5C771;
+}
+
+.journey {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+.journey .journey-img {
+  max-width: 450px;
+  margin: auto;
+}
+.journey .journey-info {
+  max-width: 500px;
+  margin: auto;
+}
+.journey .journey-info h4 {
+  color: #727272;
+}
+
+.advantages .advantage-card {
+  margin: 10px;
+  background-color: #FCFBF8;
+  max-width: 300px;
+  padding: 40px 10px;
+  font-family: "poppins", sans-serif;
+}
+.advantages .advantage-card .advantage-img {
+  margin: 10px;
+}
+.advantages .advantage-card h4 {
+  font-family: inherit;
+}
+.advantages .advantage-card h5 {
+  font-family: inherit;
+  color: #727272;
+}
+
+.form .form-img {
+  max-width: 700px;
+}
+
+@media (min-width: 768px) {
+  .advantages .advantage-card {
+    margin: 20px;
+  }
+  .advantages .advantage-card .advantage-img {
+    left: -18%;
+  }
+}/*# sourceMappingURL=styles.css.map */
