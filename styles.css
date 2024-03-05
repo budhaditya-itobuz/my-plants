@@ -111,20 +111,39 @@ a {
   max-width: 1200px;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 .hero-carousel::-webkit-scrollbar {
   display: none;
 }
 .hero-carousel .hero-img {
-  max-height: 600px;
+  flex-shrink: 0;
+  width: 700px;
+  margin: 20px;
+  border-radius: 25px;
+  overflow: hidden;
   border-radius: 50px;
   transition: ease-in-out 400ms;
 }
-.hero-carousel .hero-img:hover {
+.hero-carousel .hero-img-active {
   transform: scale(0.7);
   z-index: 2;
-  margin-right: -200px;
+  margin-right: -20%;
+}
+
+.caraosel-buttons {
+  display: flex;
+}
+.caraosel-buttons button {
+  margin: 20px;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .plant-collection {
@@ -210,8 +229,47 @@ a {
   color: #727272;
 }
 
-.form .form-img {
-  max-width: 700px;
+.form .form-body {
+  padding: 20px;
+  margin: 10px;
+  background-color: #FAF9F7;
+  margin-top: -20px;
+  padding: 50px;
+}
+.form .form-body input {
+  font-family: "poppins", sans-serif;
+  background-color: inherit;
+}
+.form .form-body input::-moz-placeholder {
+  color: #9C9FA6;
+}
+.form .form-body input::placeholder {
+  color: #9C9FA6;
+}
+.form .form-body .form-footer button {
+  font-size: 20px;
+  font-family: "poppins", sans-serif;
+}
+.form .form-body .form-footer .form-social-img {
+  height: 25px;
+}
+
+.plant-care .plant-care-info {
+  margin: 20px;
+  padding: 20px;
+  max-width: 600px;
+}
+.plant-care .plant-care-info h6 {
+  color: #727272;
+}
+.plant-care .plant-care-img {
+  padding: 10px;
+  max-width: 800px;
+  height: auto;
+  overflow: hidden;
+}
+.plant-care .plant-care-img img {
+  border-radius: 30px;
 }
 
 @media (min-width: 768px) {
@@ -220,5 +278,86 @@ a {
   }
   .advantages .advantage-card .advantage-img {
     left: -18%;
+  }
+}
+.choosing .row {
+  max-width: 1100px;
+  margin: auto;
+}
+.choosing .choose-card {
+  transition: ease-in-out 300ms;
+  max-width: 350px;
+  margin: auto;
+}
+.choosing .choose-card h5 {
+  font-family: "poppins", sans-serif;
+  color: #7D807E;
+}
+.choosing .choose-card .choosing-img {
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3E8847;
+}
+.choosing .choose-card:hover {
+  background-color: #3E8847;
+}
+.choosing .choose-card:hover .choosing-img {
+  background-color: #ffffff;
+}
+.choosing .choose-card:hover .choosing-img img {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(43%) saturate(568%) hue-rotate(76deg) brightness(90%) contrast(89%);
+}
+.choosing .choose-card:hover h4,
+.choosing .choose-card:hover h5 {
+  color: white;
+}
+
+.footer {
+  background-color: #09270D;
+  color: #B0BAA3;
+}
+.footer h4, .footer h5, .footer h2, .footer h6 {
+  font-family: "poppins", sans-serif;
+}
+.footer h2 {
+  font-size: 55px;
+  color: #D0D6C9;
+}
+.footer h4 {
+  font-weight: 300;
+  color: #D0D6C9;
+}
+.footer h5 {
+  font-size: 14px;
+  font-weight: 300;
+}
+.footer h6 {
+  font-size: 10px;
+  font-weight: 200;
+}
+.footer .footer-card {
+  max-width: 400px;
+  margin: auto;
+}
+.footer .footer-company {
+  max-width: 400px;
+}
+.footer .footer-company .social img {
+  width: 30px;
+}
+
+@media (min-width: 992px) {
+  .form .form-img {
+    max-width: 750px;
+    flex-grow: 2;
+  }
+  .form .form-body {
+    flex-grow: 1;
+    margin-left: -5%;
   }
 }/*# sourceMappingURL=styles.css.map */

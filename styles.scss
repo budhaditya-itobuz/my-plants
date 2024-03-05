@@ -4,12 +4,15 @@
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
+
 .focus-ring {
     --bs-focus-ring-color: rgba(#fff, 0);
 }
-a{
-    font-family: "poppins",sans-serif !important;
+
+a {
+    font-family: "poppins", sans-serif !important;
 }
+
 img {
     width: 100%;
     height: 100%;
@@ -126,18 +129,34 @@ a {
     max-width: 1200px;
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-
+    overflow: hidden;
     .hero-img {
-        max-height: 600px;
+        flex-shrink: 0;
+        width: 700px;
+        margin:20px;
+        border-radius: 25px;
+        overflow:hidden;
         border-radius: 50px;
         transition: ease-in-out 400ms;
-
-        &:hover {
-            transform: scale(0.7);
-            z-index: 2;
-            margin-right: -200px;
-        }
+    }
+    .hero-img-active{
+        transform: scale(0.7);
+        z-index: 2;
+        margin-right: -20%;
+    }
+}
+.caraosel-buttons{
+    display: flex;
+    button{
+        margin:20px;
+        border:none;
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -162,10 +181,12 @@ a {
             min-width: 350px;
             max-width: 400px;
             margin: 20px;
-            h4{
-                margin:20px 0;
+
+            h4 {
+                margin: 20px 0;
             }
-            img{
+
+            img {
                 height: auto;
             }
         }
@@ -195,61 +216,208 @@ a {
         }
     }
 }
-.journey{
+
+.journey {
     max-width: 1200px;
     margin: auto;
-    padding:10px;
-    .journey-img{
+    padding: 10px;
+
+    .journey-img {
         max-width: 450px;
         margin: auto;
     }
-    .journey-info{
+
+    .journey-info {
         max-width: 500px;
-        margin:auto;
-        h4{
+        margin: auto;
+
+        h4 {
             color: #727272;
         }
     }
 }
-.advantages{
-    .advantage-card{
-        .advantage-img{
-            margin:10px;
+
+.advantages {
+    .advantage-card {
+        .advantage-img {
+            margin: 10px;
             // width:80px;
             // left:5%;
             // top:20%;
         }
-        
+
         margin:10px;
         background-color: #FCFBF8;
         max-width: 300px;
         padding:40px 10px;
-        // padding-left: 100px ;
-        font-family: "poppins",sans-serif;
-        h4{
+        font-family: "poppins",
+        sans-serif;
+
+        h4 {
             font-family: inherit;
         }
-        h5{
+
+        h5 {
             font-family: inherit;
             color: #727272;
         }
     }
 }
-.form{
-    .form-img{
-        max-width: 700px;
+
+.form {
+    .form-body {
+        padding: 20px;
+        margin: 10px;
+        background-color: #FAF9F7;
+        margin-top: -20px;
+        padding: 50px;
+
+        input {
+            &::placeholder {
+                color: #9C9FA6;
+            }
+
+            font-family: "poppins",
+            sans-serif;
+            background-color: inherit;
+        }
+
+        .form-footer {
+            button {
+                font-size: 20px;
+                font-family: "poppins", sans-serif;
+            }
+
+            .form-social-img {
+                height: 25px;
+            }
+        }
     }
 }
-@media (min-width:768px){
-    .advantages{
-        .advantage-card{
-            margin:20px;
-            .advantage-img{
-                // display: inline-block;
-                left:-18%;
-                // width: 80px;
-                // height: 80px;
+
+.plant-care{
+    .plant-care-info{
+        margin:20px;
+        padding:20px;
+        max-width: 600px;
+        h6{
+            color: #727272;
+        }
+    }
+    .plant-care-img{
+        img{
+            border-radius: 30px;
+        }
+        padding:10px;
+        max-width: 800px;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media (min-width:768px) {
+    .advantages {
+        .advantage-card {
+            margin: 20px;
+
+            .advantage-img {
+                left: -18%;
             }
+        }
+    }
+}
+
+.choosing {
+    .row {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .choose-card {
+        transition: ease-in-out 300ms;
+        max-width: 350px;
+        margin: auto;
+
+        h5 {
+            font-family: "poppins", sans-serif;
+            color: #7D807E;
+        }
+
+        .choosing-img {
+            width: 70px;
+            height: 70px;
+            padding: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3E8847;
+        }
+
+        &:hover {
+            background-color: #3E8847;
+
+            .choosing-img {
+                background-color: #ffffff;
+
+                img {
+                    filter: brightness(0) saturate(100%) invert(46%) sepia(43%) saturate(568%) hue-rotate(76deg) brightness(90%) contrast(89%);
+                }
+            }
+
+            h4,
+            h5 {
+                color: white;
+            }
+        }
+    }
+}
+.footer{
+    background-color: #09270D;
+    color:#B0BAA3;
+    h4,h5,h2,h6{
+        font-family: "poppins",sans-serif;
+    }
+    h2{
+        font-size: 55px;
+        color:#D0D6C9
+    }
+    h4{
+        font-weight: 300;
+        color: #D0D6C9;
+    }
+    h5{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    h6{
+        font-size: 10px;
+        font-weight: 200;
+    }
+    .footer-card{
+        max-width: 400px;
+        margin: auto;
+    }
+    .footer-company{
+        max-width: 400px;
+        .social{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .form {
+        .form-img {
+            max-width: 750px;
+            flex-grow: 2;
+        }
+
+        .form-body {
+            flex-grow: 1;
+            margin-left: -5%;
         }
     }
 }

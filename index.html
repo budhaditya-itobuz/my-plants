@@ -52,8 +52,8 @@
                 </ul>
                 <div class="d-flex align-items-center">
                     <div class="search d-flex align-items-center mx-4">
-                        <input class="form-control me-2 border-0 focus-ring " type="search" placeholder="Search Products..."
-                            aria-label="Search">
+                        <input class="form-control me-2 border-0 focus-ring " type="search"
+                            placeholder="Search Products..." aria-label="Search">
                         <img src="./images/navbar/search.svg" alt="">
                     </div>
                     <a class="mx-3" href=""><img src="./images/navbar/user.svg" alt="user"></a>
@@ -73,7 +73,7 @@
                 <button class="btn btn-outline-dark rounded-4 px-4">Plant Care</button>
                 <button class="btn btn-outline-dark rounded-4 px-4 m-3">Buy a plant</button>
             </div>
-            <div class="hero-social d-flex ">
+            <div class="hero-social d-flex justify-content-center ">
                 <div class="hero-social-img me-4">
                     <img src="./images/hero/facebook.svg" alt="facebook">
                 </div>
@@ -85,15 +85,21 @@
                 </div>
             </div>
         </div>
-        <div id="hero-carousel" class="d-flex hero-carousel">
-
+        <div class="d-flex flex-column align-items-center  ">
+            <div id="hero-carousel" class="d-flex hero-carousel">
+    
+            </div>
+            <div class="caraosel-buttons">
+                <button id="hero-prev"><img src="./images/components/arrowLeft.svg" alt="leftArrow"></button>
+                <button id="hero-next"><img src="./images/components/arrowRight.svg" alt="rightArrow"></button>
+            </div>
         </div>
     </section>
     <section class="plant-collection">
         <h3>Plant Collection</h3>
         <div class="d-flex justify-content-center flex-column flex-md-row  ">
             <div id="plant-collection-body" class="collection-body">
-    
+
             </div>
             <div class="collection-buttons d-flex flex-row flex-md-column ">
                 <a id="collection-prev" class="" href="">&lt;</a>
@@ -108,7 +114,9 @@
         <div class="d-flex flex-column align-items-start journey-info px-3">
             <h2 class="mb-4 fs-1">Our journey</h2>
             <h4 class="fs-5 fw-light mb-5">
-                It is a long established fact that a reader will be distracted by the readable content of a page when It is a long .It is a long established fact that a reader will be distracted by the readable content of a is simply.
+                It is a long established fact that a reader will be distracted by the readable content of a page when It
+                is a long .It is a long established fact that a reader will be distracted by the readable content of a
+                is simply.
             </h4>
             <a href="" class="btn btn-dark rounded-4 px-5">Get start</a>
         </div>
@@ -150,19 +158,148 @@
                     </h5>
                 </div>
             </div>
-            
+
         </div>
     </section>
-    <section class="form">
+    <section class="form d-flex flex-column flex-lg-row align-items-center my-5">
         <div class="form-img">
             <img src="./images/form/fruits.png" alt="fruits">
         </div>
-        <div>
+        <div class="form-body d-flex  flex-column rounded-4">
             <h3>Ask us anything</h3>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Phone">
-            <input type="text" placeholder="e-mail">
+            <input class="focus-ring border-0 border-bottom my-2" type="text" placeholder="Name">
+            <input class="focus-ring border-0 border-bottom my-2" type="text" placeholder="Phone">
+            <input class="focus-ring border-0 border-bottom my-2" type="text" placeholder="e-mail">
+            <input class="focus-ring border-0 border-bottom mt-5" type="text" placeholder="message">
+            <div class="form-footer d-flex flex-column flex-md-row justify-content-between align-items-center   my-5">
+                <button class="btn btn-dark rounded-4 px-5 py-2 ">
+                    Send
+                </button>
+                <div class="form-social d-flex justify-content-center my-4">
+                    <div class="form-social-img mx-4">
+                        <img src="./images/hero/facebook.svg" alt="facebook">
+                    </div>
+                    <div class="form-social-img mx-4">
+                        <img src="./images/hero/instagram.svg" alt="instagram">
+                    </div>
+                    <div class="form-social-img mx-4">
+                        <img src="./images/hero/pinterest.svg" alt="pinterest">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choosing my-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <div class="choose-card p-4 px-5 d-flex flex-column ">
+                    <div class="choosing-img my-3">
+                        <img src="./images/choosing/garden-plant.svg" alt="">
+                    </div>
+                    <h4 class="my-2">Garden plants</h4>
+                    <h5 class="fs-6 fw-light my-2">It is a long established fact that a reader will be distracted by the
+                    </h5>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="choose-card p-4 px-5 d-flex flex-column ">
+                    <div class="choosing-img my-3">
+                        <img src="./images/choosing/garden-plant.svg" alt="">
+                    </div>
+                    <h4 class="my-2">Garden plants</h4>
+                    <h5 class="fs-6 fw-light my-2">It is a long established fact that a reader will be distracted by the
+                    </h5>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="choose-card p-4 px-5 d-flex flex-column ">
+                    <div class="choosing-img my-3">
+                        <img src="./images/choosing/garden-plant.svg" alt="">
+                    </div>
+                    <h4 class="my-2">Garden plants</h4>
+                    <h5 class="fs-6 fw-light my-2">It is a long established fact that a reader will be distracted by the
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="plant-care d-flex flex-column flex-lg-row-reverse ">
+        <div class="plant-care-img">
+            <img src="./images/plant-care/plant-care.png" alt="">
+        </div>
+        <div class="plant-care-info">
+            <h4 class="fs-2 my-5">
+                Plant care
+            </h4>
+            <h6 class="fs-5 fw-light my-5">
+                It is a long established fact that a reader will be distracted by the readable content of a page when It
+                is a long .It is a long established fact that a reader will be distracted by the readable content of a
+                is simply.
+                <br>
+                a page when It is a long .It is a long established fact that a reader will be distracted by the readable
+                content of a is simply.
+            </h6>
+            <button class="btn btn-dark px-4 py-2 rounded-4">Read the blog</button>
+        </div>
 
+    </section>
+    <section class="footer pt-5">
+        <div class="container row m-auto">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="footer-card footer-company my-4 mx-auto">
+                    <h2 class="my-2">nuvosa</h2>
+                    <h5 class="my-2">
+                        It is a long established fact that a reader will be distracted by the readable content of a page
+                        when It is a long .It is a long established fact that a reader will be distracted by the.
+                    </h5>
+                    <div class="social d-flex my-3">
+                        <img class="mx-1 ms-0" src="./images/footer/insta.svg" alt="instagram">
+                        <img class="mx-1" src="./images/footer/facebook.svg" alt="facebook">
+                        <img class="mx-1" src="./images/footer/youtube.svg" alt="youtube">
+                        <img class="mx-1" src="./images/footer/twitter.svg" alt="twitter">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <div class="footer-card my-4 mx-auto">
+                    <h4 class="subtitle mb-4">Services</h4>
+                    <h5 class="">Gardening</h5>
+                    <h5 class="subtitle">Lawn service</h5>
+                    <h5 class="subtitle">Leaf removal</h5>
+                    <h5 class="subtitle">Decoration</h5>
+                    <h5 class="subtitle">Triming</h5>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <div class="footer-card my-4 mx-auto">
+                    <h4 class="subtitle mb-4">Support</h4>
+                    <h5 class="">Gardening</h5>
+                    <h5 class="subtitle">Lawn service</h5>
+                    <h5 class="subtitle">Leaf removal</h5>
+                    <h5 class="subtitle">Decoration</h5>
+                    <h5 class="subtitle">Triming</h5>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <div class="footer-card my-4 mx-auto">
+                    <h4 class="mb-4">Company</h4>
+                    <h5 class="">Gardening</h5>
+                    <h5 class="subtitle">Lawn service</h5>
+                    <h5 class="subtitle">Leaf removal</h5>
+                    <h5 class="subtitle">Decoration</h5>
+                    <h5 class="subtitle">Triming</h5>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="d-flex flex-column flex-md-row justify-content-around  align-items-center py-3">
+                    <h6 class="subtitle">Copyright © 2023 nuvosa, All rights reserved.</h6>
+                    <div class="d-flex">
+                        <h6 class="mx-2">Terms of use</h6>
+                        <h6 class="mx-2">copyright & trademark</h6>
+                        <h6 class="mx-2">Policy</h6>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script type="module" src="main.js"></script>

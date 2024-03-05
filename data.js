@@ -1,21 +1,27 @@
 
-
 export const heroData=[
     {
         img:"./images/hero/plant1.png"
     },
     {
-        img:"./images/hero/plant2.avif"
+        img:"./images/hero/plant1.png"
     },
     {
-        img:"./images/hero/plant3.avif"
+        img:"./images/hero/plant1.png"
     },
     {
-        img:"./images/hero/plant4.avif"
+        img:"./images/hero/plant1.png"
     },
     {
-        img:"./images/hero/plant5.webp"
-    }
+        img:"./images/hero/plant1.png"
+    },
+    {
+        img:"./images/hero/plant1.png"
+    },
+    {
+        img:"./images/hero/plant1.png"
+    },
+    
 ]
 
 export const plantCollection=[
