@@ -87,11 +87,16 @@
         </div>
         <div class="d-flex flex-column align-items-center  ">
             <div id="hero-carousel" class="d-flex hero-carousel">
-    
+
             </div>
             <div class="caraosel-buttons">
-                <button id="hero-prev"><img src="./images/components/arrowLeft.svg" alt="leftArrow"></button>
-                <button id="hero-next"><img src="./images/components/arrowRight.svg" alt="rightArrow"></button>
+                <button id="hero-prev"><img src="./images/components/arrow-left.svg" alt="leftArrow"></button>
+                <h4 class="item-index" id="curr-item"></h4>
+                <div class="progress">
+                    <div id="hero-progress" class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="item-index" id="total-item"></h4>
+                <button id="hero-next"><img src="./images/components/arrow-right.svg" alt="rightArrow"></button>
             </div>
         </div>
     </section>
@@ -109,7 +114,7 @@
     </section>
     <section class="journey d-flex flex-column flex-md-row">
         <div class="journey-img mb-5">
-            <img src="./images/journey/journeyPlant.png" alt="">
+            <img src="./images/journey/journey-plant.png" alt="">
         </div>
         <div class="d-flex flex-column align-items-start journey-info px-3">
             <h2 class="mb-4 fs-1">Our journey</h2>
@@ -221,6 +226,12 @@
                     </h5>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="testimony">
+        <h2>What clients talk about us</h2>
+        <div class="testimony-caraosel" id="testimony-box">
+            
         </div>
     </section>
     <section class="plant-care d-flex flex-column flex-lg-row-reverse ">

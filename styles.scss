@@ -4,7 +4,12 @@
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
-
+.btn-dark{
+    background-color: #09270D;
+}
+.btn-outline-dark:hover{
+    background-color: #09270D;
+}
 .focus-ring {
     --bs-focus-ring-color: rgba(#fff, 0);
 }
@@ -25,7 +30,9 @@ a {
 .nav-link {
     font-family: "poppins";
 }
-
+.navbar-brand{
+    font-family: "Playfair Display" !important;
+}
 .logo {
     color: #7D807E;
 
@@ -59,6 +66,8 @@ a {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding: 10px;
     margin: auto;
@@ -67,9 +76,7 @@ a {
 
     .hero-info {
         z-index: 3;
-        position: absolute;
-        left: 0;
-        margin: 30px;
+        margin: 30px auto;
         max-width: 400px;
         padding: 10px;
 
@@ -103,6 +110,7 @@ a {
         }
 
         .hero-btn-group {
+            
             button {
                 font-family: "poppins", sans-serif;
                 border-radius: 50px;
@@ -126,34 +134,41 @@ a {
         display: none;
     }
 
-    max-width: 1200px;
+    margin:10px;
+    max-width: 300px;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
+
     .hero-img {
         flex-shrink: 0;
-        width: 700px;
-        margin:20px;
-        border-radius: 25px;
-        overflow:hidden;
-        border-radius: 50px;
+        width: 280px;
+        margin: 20px;
+        overflow: hidden;
+        border-radius: 20px;
         transition: ease-in-out 400ms;
     }
-    .hero-img-active{
-        transform: scale(0.7);
-        z-index: 2;
-        margin-right: -20%;
-    }
 }
-.caraosel-buttons{
+
+.caraosel-buttons {
     display: flex;
-    button{
-        margin:20px;
-        border:none;
-        width:40px;
-        height:40px;
+    align-items: center;
+    .progress{
+        width: 100px;
+        height: 4px;
+    }
+    .item-index{
+        font-family: "poppins",sans-serif;
+        color:#7D807E;
+        margin:10px;
+    }
+    button {
+        margin: 20px;
+        border: none;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        padding:10px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -241,9 +256,6 @@ a {
     .advantage-card {
         .advantage-img {
             margin: 10px;
-            // width:80px;
-            // left:5%;
-            // top:20%;
         }
 
         margin:10px;
@@ -295,35 +307,27 @@ a {
     }
 }
 
-.plant-care{
-    .plant-care-info{
-        margin:20px;
-        padding:20px;
+.plant-care {
+    .plant-care-info {
+        margin: 20px;
+        padding: 20px;
         max-width: 600px;
-        h6{
+
+        h6 {
             color: #727272;
+            line-height: 30px !important;
         }
     }
-    .plant-care-img{
-        img{
+
+    .plant-care-img {
+        img {
             border-radius: 30px;
         }
+
         padding:10px;
         max-width: 800px;
         height: auto;
         overflow: hidden;
-    }
-}
-
-@media (min-width:768px) {
-    .advantages {
-        .advantage-card {
-            margin: 20px;
-
-            .advantage-img {
-                left: -18%;
-            }
-        }
     }
 }
 
@@ -372,41 +376,173 @@ a {
         }
     }
 }
-.footer{
+
+.footer {
     background-color: #09270D;
-    color:#B0BAA3;
-    h4,h5,h2,h6{
-        font-family: "poppins",sans-serif;
+    color: #B0BAA3;
+
+    h4,
+    h5,
+    h2,
+    h6 {
+        font-family: "poppins", sans-serif;
     }
-    h2{
+
+    h2 {
         font-size: 55px;
-        color:#D0D6C9
+        color: #D0D6C9
     }
-    h4{
+
+    h4 {
         font-weight: 300;
         color: #D0D6C9;
     }
-    h5{
+
+    h5 {
         font-size: 14px;
         font-weight: 300;
     }
-    h6{
+
+    h6 {
         font-size: 10px;
         font-weight: 200;
     }
-    .footer-card{
+
+    .footer-card {
         max-width: 400px;
         margin: auto;
     }
-    .footer-company{
+
+    .footer-company {
         max-width: 400px;
-        .social{
-            img{
+
+        .social {
+            img {
                 width: 30px;
             }
         }
     }
 }
+
+.testimony {
+    padding: 20px;
+
+    .testimony-caraosel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        align-items: center;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .testimony-play {
+            display: none;
+
+        }
+
+        .testimony-card {
+            position: relative;
+            display: flex;
+            background-color: #ffffff;
+            min-width: 280px;
+            margin: 50px;
+            padding: 20px;
+            padding-left: 40px;
+            color: #3E8847;
+            box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.50);
+            border-radius: 10px;
+
+            h4 {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 25px;
+                font-family: "poppins", sans-serif;
+            }
+
+            .testimony-profile {
+                height: 100px;
+                position: absolute;
+                width: 100px;
+                left: -10%;
+            }
+
+            .front-quote,
+            .back-quote {
+                img {
+                    filter: brightness(0) saturate(100%) invert(47%) sepia(28%) saturate(822%) hue-rotate(76deg) brightness(91%) contrast(91%);
+                    width: 30px;
+                    height: 30px;
+                }
+
+                padding:0 10px;
+                display: flex;
+                align-items:start;
+            }
+
+            .back-quote {
+                align-items: flex-end;
+            }
+
+            &:hover {
+                background-color: #3E8847;
+                color: white;
+
+                .back-quote,
+                .front-quote {
+                    img {
+                        filter: unset;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:576px) {
+    .hero-carousel {
+        max-width: 500px;
+
+        .hero-img {
+            width: 450px;
+        }
+    }
+}
+
+
+@media (min-width:768px) {
+    .advantages {
+        .advantage-card {
+            margin: 20px;
+
+            .advantage-img {
+                left: -18%;
+            }
+        }
+    }
+
+    .testimony {
+        .testimony-caraosel {
+            .testimony-play {
+                display: block;
+                margin: 20px;
+                padding: 10px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+
+                img {
+                    min-width: 40px;
+                    height: 40px;
+                }
+            }
+            .testimony-card{
+                min-width:500px;
+            }
+        }
+    }
+}
+
 
 @media (min-width:992px) {
     .form {
@@ -418,6 +554,32 @@ a {
         .form-body {
             flex-grow: 1;
             margin-left: -5%;
+        }
+    }
+
+    .hero-info {
+        position: absolute;
+    }
+
+    .hero-carousel {
+        align-self: flex-end;
+        max-width: 1200px;
+
+        .hero-img {
+            width: 700px;
+        }
+
+        .hero-img-active {
+            transform: scale(0.7);
+            z-index: 2;
+            margin-right: -20%;
+        }
+    }
+    .testimony{
+        .testimony-caraosel{
+            .testimony-card{
+                min-width: 620px ;
+            }
         }
     }
 }
